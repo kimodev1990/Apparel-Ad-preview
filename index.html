@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Coming Soon Ad Brand with Email Login">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <article class="container__article">
+            <div class="container__article__logo">
+                <img class="container__article__logo__image" src="./images/logo.svg" alt="Brand Logo">
+            </div>
+            <div class="container__article__divTitle">
+                <h1 class="container__article__divTitle_title">
+                    <span class="container__article__divTitle_title--color">We're</span> coming soon
+                </h1>
+            </div>
+            <div class="container__article__divParagraph">
+                <p
+                    class="container__article__divParagraph__paragraph container__article__divParagraph__paragraph--color">
+                    Hello fellow shoppers! We're currently building our new fashion store.
+                    Add your email below to stay up-to-date with announcements and our launch deals.
+                </p>
+            </div>
+            <form class="container__article__formInfo">
+                <input type="text" class="container__article__formInfo__email"
+                    name="container__article__formInfo__email" placeholder="Email Address">
+                <div class="container__article__formInfo__divError hidden">
+                    <img class="container__article__formInfo__divError__image" src="./images/icon-error.svg"
+                        alt="error logo">
+                </div>
+                <button id="al" aria-label="arrow login image " type="submit"
+                    class="btn btn--color container__article__formInfo__button">
+                    <img class="btn__image" src="./images/icon-arrow.svg" alt="">
+                </button>
+            </form>
+            <label class="container__article__label hidden" for="container__article__formInfo__email">
+                <p class="container__article__label__sign container__article__label__sign--color">Please provide a Vaild
+                    Email</p>
+            </label>
+        </article>
+        <picture class="container__picture">
+            <source media="(max-width:375.5px)" srcset="./images/hero-mobile.jpg">
+            <img class="container__picture__image" src="./images/hero-desktop.jpg" alt="Picture pose of woman model">
+        </picture>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
